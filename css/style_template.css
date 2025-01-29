@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+/* General Styles */
+body {
+    background-color: #fafafa;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #003366;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #66b2ff;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+/* Nav Styles */
+nav {
+    font-family: 'Merriweather', serif;
+    display: flex;
+    justify-content: space-between;
+    background-color: #003366;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+
+nav a {
+    color: #ffffff;
+}
+
+nav a:hover {
+    color: #66b2ff;
+}
+
+/* Footer Styles */
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #002244;
+    color: #ffffff;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+footer a:hover {
+    color: #66b2ff;
+}
+
+/* Splash Section */
+.splash {
+    background-color: #f0f8ff;
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: 0;
+}
+
+.splash h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.5rem;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.splash img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #003366;
+    border-radius: 50%;
+}
+
+/* I split the paragraph styling with first and last of type */
+.splash p:first-of-type {
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+.splash p:last-of-type {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #003366;
+    line-height: 1.5;
+}
+
+/* Horizontal Rules */
+hr {
+    border: none;
+    border-top: 3px solid #003366;
+    margin: 0;
+}
+
+/* Sections */
+section {
+    margin-bottom: 30px;
+}
+
+/* Section Headings */
+section h2 {
+    font-family: 'Merriweather', serif;
+    color: #003366;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.education {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #444444;
+ }
+
+/* List Styles */
+ul {
+    list-style-type: square;
+
+    padding-left: 20px;
+    margin-left: 0;
+    color: #003366;
+    font-size: 1.2rem;
+}
+
+ul li {
+    font-size: 1.2rem;
+
+    line-height: 1.6;
+    color: #444444;
+}
+
+dl {
+    font-size: 1.2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px 20px;
+    color: #444444;
+}
+
+dd {
+    font-style: italic;
+}
+
+dl dd{
+    font-size: 1.2rem;
+    margin: 0;
+    color: #666666;
+}
+
+/* Project Section */
+.three-col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* small dynamic movement */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card h3 {}
+
+/* Contact Page Styles */
+.one-col {
+    font-family: 'Merriweather', serif;
+    max-width: 50%;
+    margin: 40px auto;
+    text-align: center;
+    padding: 20px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.one-col h1 {
+    color: #003366;
+}
+
+.one-col hr {
+    padding-bottom: 20px;
+}
+
+form {
+    font-family: 'Merriweather', serif;
+    display: flex;
+    flex-direction: column;
+
+    width: 100%
+}
+
+form label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 0;
+    display: inline-block;
+    text-align: left;
+}
+
+form input, form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px #cccccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333333;
+    background-color: #ffffff;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #66b2ff;
+    box-shadow: 0 0 5px rgba(102, 178, 255, 0.5);
+    outline: none;
+}
+
+form button {
+    font-family: 'Merriweather', serif;
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #003366;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background-color: #66b2ff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.thank-you {
+    background-color: #f0f8ff;
+    padding: 40px;
+    margin: 100px auto;
+}
