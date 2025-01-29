@@ -49,6 +49,10 @@ footer {
     color: #ffffff;
 }
 
+footer i {
+    padding-left: 10px;
+}
+
 footer a {
     color: #ffffff;
 }
@@ -229,6 +233,7 @@ form label {
 }
 
 form input, form textarea {
+    font-family: inherit;
     margin-bottom: 15px;
     padding: 10px;
     border: 1px #cccccc;
